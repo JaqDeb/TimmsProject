@@ -1,0 +1,128 @@
+/* Dark blue gradient theme and modern styling */
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    color: #f8f9fa;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(45, 45, 45, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card {
+    border: none;
+    background-color: #2d2d2d;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #f8f9fa;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+.navigation-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#progress-bar {
+    height: 8px;
+    border-radius: 4px;
+    background-color: #444;
+}
+
+.progress-bar {
+    background-color: #007bff;
+}
+
+#options-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: nowrap; /* Ensure all buttons stay in one row */
+}
+
+#options-container button {
+    flex: 1;
+    max-width: 150px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #444;
+    color: #f8f9fa;
+    border: 1px solid #666;
+}
+
+#options-container button:hover {
+    background-color: #555;
+}
+
+#options-container button i {
+    margin-right: 8px;
+}
+
+/* Ensure questions always occupy the same height */
+#question-text {
+    min-height: 180px; /* Fixed height for two lines */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.5; /* Adjust line height for better readability */
+    padding: 10px; /* Add padding for spacing */
+    white-space: normal; /* Allow text to wrap */
+    word-wrap: break-word; /* Break long words if necessary */
+    overflow: hidden; /* Prevent text from overflowing */
+    box-sizing: border-box; /* Include padding in height calculation */
+}
+/* Style for selected options */
+#options-container button.selected {
+    background-color: #28a745; /* Dark green */
+    border-color: #28a745;
+    color: #fff; /* White text for better contrast */
+}
+/* Style for the results section */
+#results-content {
+    margin-top: 20px;
+}
+
+.result-item {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #f8f9fa;
+    display: block; /* Ensure each result is on a new line */
+}
+
+.result-item strong {
+    color: #28a745; /* Dark green for profile names */
+}
